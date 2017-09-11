@@ -1,0 +1,33 @@
+html,
+body {
+  margin: 0;
+}
+
+nav {
+  margin-bottom: 1rem;
+  /*background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);*/
+  background: #f5576c;
+  margin: 0 0 1rem;
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+}
+
+.nav-link {
+  margin: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .5px;
+  cursor: pointer;
+}

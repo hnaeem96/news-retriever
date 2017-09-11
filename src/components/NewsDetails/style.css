@@ -1,0 +1,51 @@
+.article-content {
+  margin: 20px;
+}
+
+.go-back {
+  color: #f5576c;
+  padding: 1rem;
+}
+
+.article-title {
+  font-weight: 300;
+}
+
+.article-image {
+  max-width: 700px;
+}
+
+.article-details {
+  text-align: center;
+}
+
+.article-author {
+  font-size: 14px;
+}
+
+.buttons-row {
+  margin-top: 30px;
+}
+
+.btn,
+.btn:active,
+.btn:link {
+  padding: .8rem 1rem;
+  margin: 1rem;
+  font-size: 16px;
+  background: #f5576c;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.btn:hover {
+  background: #d44054;
+}
+
+button,
+a {
+  outline: none;
+}

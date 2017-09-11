@@ -1,0 +1,104 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
+
+.news-list {
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.news {
+  margin: 20px;
+}
+
+.author {
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+}
+
+.news-title {
+  text-align: center;
+  font-weight: 300;
+}
+
+.news-block {
+  border: 1px solid #f5576c;
+  margin: 2rem;
+  color: #000;
+  display: flex;
+}
+
+.news-block:hover {
+  background: rgba(245, 87, 108, 0.3);
+  border-color: transparent;
+  transition: background .2s, border-color .2s;
+}
+
+.img-row {
+  width: 250px;
+}
+
+.article-img {
+  width: 250px;
+}
+
+.details-row {
+  position: relative;
+  margin: 0 1rem;
+}
+
+h4 {
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

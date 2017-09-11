@@ -1,0 +1,13 @@
+.db-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  margin: 0;
+}
+
+.db-block a {
+  width: 100%;
+}
