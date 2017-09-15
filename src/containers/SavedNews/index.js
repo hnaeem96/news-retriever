@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getSavedNews, removeFromSaved } from '../../actions/index';
+import SavedNewsItem from '../../components/SavedNewsItem';
 
 import './style.css';
 
@@ -24,17 +25,12 @@ class SavedNews extends Component {
     return _.map(this.props.savedNews, article => {
       return (
         <div className="db-block" key={`${article.id}-${article.publishedAt}`}>
-          <a target="_blank" href={article.url}>
-            <li className="news-block">
-              <div className="img-row">
-                <img className="article-img" src={article.urlToImage} alt={article.urlToImage}/>
-              </div>
-              <div className="details-row">
-                <h4 className="article">{article.title}</h4>
-                <span className="author">{article.author}</span>
-              </div>
-            </li>
-          </a>
+          <SavedNewsItem
+            url={article.url}
+            urlToImage={article.urlToImage}
+            title={article.title}
+            author={article.author}
+          />
           <button className="btn remove-btn" onClick={() => this.removeNews(article)}>Remove</button>
         </div>
       );
