@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { getNewsDetails, saveNewsToDatabase, checkInSaved, saveToFavorites, checkInFavorites } from '../../actions/index';
+import NewsDetailsItem from '../../components/NewsDetailsItem';
 
 import './style.css';
 
@@ -79,10 +80,12 @@ class NewsDetails extends Component {
         <Link className="go-back" to="/">&#x2190; Go Back</Link>
         <div className="article-content">
           <div className="article-details">
-            <h1 className="article-title">{article.title}</h1>
-            <img className="article-image" src={article.urlToImage} alt={article.urlToImage}/>
-            <p className="article-description">{article.description}</p>
-            <div className="article-author">{article.author}</div>
+            <NewsDetailsItem
+              title={article.title}
+              urlToImage={article.urlToImage}
+              description={article.description}
+              author={article.author}
+            />
             <hr />
             {
               (this.state.ranSaveFunction === 'True' && this.state.ranFavFunction === 'True')?
