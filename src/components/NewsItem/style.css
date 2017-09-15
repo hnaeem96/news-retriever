@@ -1,0 +1,36 @@
+.news-block {
+  border: 1px solid #f5576c;
+  margin: 2rem;
+  color: #000;
+  display: flex;
+}
+
+.news-block:hover {
+  background: rgba(245, 87, 108, 0.3);
+  border-color: transparent;
+  transition: background .2s, border-color .2s;
+}
+
+.img-row {
+  width: 250px;
+}
+
+.article-img {
+  width: 250px;
+}
+
+.details-row {
+  position: relative;
+  margin: 0 1rem;
+}
+
+h4 {
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+.author {
+  position: absolute;
+  font-size: 14px;
+  bottom: 5px;
+}
