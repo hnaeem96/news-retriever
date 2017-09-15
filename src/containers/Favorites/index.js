@@ -42,7 +42,6 @@ class FavoriteNews extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="news">
         <h1 className="news-title">Favorites</h1>

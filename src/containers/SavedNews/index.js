@@ -42,7 +42,6 @@ class SavedNews extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="news">
         <h1 className="news-title">Saved News</h1>
