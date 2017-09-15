@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { getNews } from '../../actions/index';
+import NewsItem from '../NewsItem';
 
 import './style.css';
 
@@ -18,20 +19,30 @@ class App extends Component {
 
   renderNews() {
     return _.map(this.props.news, article => {
+      // return (
+      //   <Link to={`/${article.id}`} key={`${article.id}-${article.publishedAt}`}>
+      //     <li className="news-block">
+      //       <div className="img-row">
+      //         <img className="article-img" src={article.urlToImage} alt={article.urlToImage}/>
+      //       </div>
+      //       <div className="details-row">
+      //         <h4 className="article">{article.title}</h4>
+      //         <span className="author">{article.author}</span>
+      //       </div>
+      //     </li>
+      //   </Link>
+      // );
       return (
-        <Link to={`/${article.id}`} key={`${article.id}-${article.publishedAt}`}>
-          <li className="news-block">
-            <div className="img-row">
-              <img className="article-img" src={article.urlToImage} alt={article.urlToImage}/>
-            </div>
-            <div className="details-row">
-              <h4 className="article">{article.title}</h4>
-              <span className="author">{article.author}</span>
-            </div>
-          </li>
-        </Link>
+        <NewsItem
+          id={article.id}
+          publishedAt={article.publishedAt}
+          urlToImage={article.urlToImage}
+          title={article.title}
+          author={article.author}
+          key={`${article.id}-${article.publishedAt}`}
+        />
       );
-    })
+    });
   }
 
   render() {
