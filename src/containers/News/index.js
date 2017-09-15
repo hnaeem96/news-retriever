@@ -2,7 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getNews } from '../../actions/index';
-import NewsItem from '../NewsItem';
+import NewsItem from '../../components/NewsItem';
 
 import './style.css';
 
