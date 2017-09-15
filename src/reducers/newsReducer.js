@@ -1,5 +1,3 @@
-// import _ from 'lodash';
-
 import { GET_NEWS, GET_NEWS_DETAILS } from '../actions/index';
 
 export default function(state = {}, action) {
