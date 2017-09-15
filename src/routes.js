@@ -1,10 +1,10 @@
 import React from 'react';
 import { Router, Route } from 'react-router';
 
-import News from './components/News';
-import NewsDetails from './components/NewsDetails';
-import SavedNews from './components/SavedNews';
-import FavoriteNews from './components/Favorites';
+import News from './containers/News';
+import NewsDetails from './containers/NewsDetails';
+import SavedNews from './containers/SavedNews';
+import FavoriteNews from './containers/Favorites';
 import NotFound from './components/NotFound';
 
 const Routes = (props) => (

@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import { getFavoritedNews, removeFromFavorites } from '../../actions/index';
 import SavedNewsItem from '../../components/SavedNewsItem';
 
-import './style.css';
-
 class FavoriteNews extends Component {
   constructor(props) {
     super(props);
