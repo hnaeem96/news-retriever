@@ -10,7 +10,6 @@ router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
 const jsonParser = bodyParser.json()
 
-//API Service
 mongoose.connect('mongodb://localhost/NewsRetriever')
     .then(() => console.log('Connection Succesful'))
     .catch((e) => console.error(e));
