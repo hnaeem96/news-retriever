@@ -1,3 +1,5 @@
+const https = require('https');
+
 var Article = require('../models/savedArticles');
 var favoriteArticle = require('../models/favoritedArticles');
 
